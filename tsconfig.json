@@ -15,15 +15,15 @@
     "removeComments": false,
     "rootDir": ".",
     "types": [],
-    "paths": {
-      "@pm/*": ["packages/*", "apps/*"]
-    },
+    // "paths": {
+    //   "@mp/*": ["packages/**", "apps/**"]
+    // },
     "composite": true,
     "jsx": "preserve",
     "lib": ["ES2018", "DOM", "DOM.Iterable"],
     "skipLibCheck": true
   },
-  "include": ["packages"],
+  // "include": ["packages"],
   "exclude": [
     "node_modules",
     "**/dist",

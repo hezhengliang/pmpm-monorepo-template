@@ -1,8 +1,4 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
   <div>
@@ -12,10 +8,22 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
+    <Text />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
+<script setup lang="ts">
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+// import HelloWorld from './components/HelloWorld.vue'
+import { isFunction} from '@mp/shared'
+import { Text } from '@mp/components'
+function a(){
+  console.log('a is Function');
+  
+}
+console.log(isFunction(a));
 
+</script>
 <style scoped>
 .logo {
   height: 6em;
