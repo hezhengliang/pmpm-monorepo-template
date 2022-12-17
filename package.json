@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:vue-app": "pnpm run -C apps/vue-app dev",
+    "dev": "turbo run dev --filter vue-app",
+    "build": "turbo run build --filter vue-app",
     "clean": "pnpm run clean:dist && pnpm run -r --parallel clean",
     "clean:dist": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,7 +22,8 @@
     "husky": "^8.0.2",
     "lodash-es": "^4.17.21",
     "prettier": "^2.7.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "turbo": "^1.6.3"
   },
   "husky": {
     "hooks": {
