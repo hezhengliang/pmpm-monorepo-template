@@ -1,3 +1,9 @@
+<!--
+ * @Date: 2022-11-26 14:35:49
+ * @LastEditors: 93eryi@gmail.com
+ * @LastEditTime: 2023-06-18 11:48:56
+ * @Description: 
+-->
 
 
 <template>
@@ -15,7 +21,7 @@
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-// import HelloWorld from './components/HelloWorld.vue'
+// import TestVue from './components/TestVue.vue'
 import { ref} from 'vue'
 import { isFunction} from '@mp/shared'
 import { Text } from '@mp/components'
